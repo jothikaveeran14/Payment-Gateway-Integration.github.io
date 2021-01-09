@@ -1,0 +1,136 @@
+*{
+	padding:0;
+	margin:0;
+	text-decoration:none;
+	list-style:none;
+	box-sizing:border-box;
+}
+nav{
+	background-color: #722f37; 
+}
+.left{
+	margin-left: 30px;
+	color:white;
+	font-size:20px;
+	font-weight: bold;
+	line-height:60px;
+	padding: 7px 15px;
+	font-family: cursive;
+}
+nav ul{
+	float:right;
+	margin-right:20px;  
+}
+nav ul li{
+	display:inline-block;
+	line-height:60px;
+	padding-right: 15px;
+}
+nav ul li a{
+	color:white;
+	font-size:18px;
+	padding: 7px 15px;
+	text-transform:uppercase;
+	font-weight: bold;
+}	
+nav ul li a.active,nav ul li a:hover,a button.btn:hover{
+	color: black;
+	background:white;
+}
+.btn{
+	margin-top: 350px;
+	background-color: #66424d;
+	margin-left: 600px;
+	border: 2px solid white;
+	color: white;
+	padding: 12px 20px;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: cursive;
+}
+.size{
+	width: 1000px;
+	height: 500px;
+}
+.styling{
+	padding: 0px 90px 0px 190px;
+	font-family: cursive;
+}
+.fontstyling{
+	text-align:center;
+	font-style: italic;
+	color: #505050;
+	font-family: cursive;
+}
+.contact-info{
+	display:flex;
+	padding: 0px 50px;
+	margin-top: 100px;
+	opacity:0.7;
+}
+.card{
+	background:#2f3542;
+	margin:0 10px;
+	width:600px;
+	height:400px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	color:#fff;
+	cursor:pointer
+}
+.card-icon{
+	font-size:28px;
+	background:#ff6348;
+	width:80px;
+	height:60px;
+	text-align:center;
+	line-height:60px;
+	border-radius:50%;
+	transition:0.3s;
+}
+.card:hover .card-icon{
+	background:none;
+	color:#ff6348;
+	transform:scale(1.6);
+}
+.card p{
+	margin-top:20px;
+	letter-spacing:2px;
+	opacity:0;
+}
+.card:hover p{
+	opacity: 1; 
+}
+@media screen and (max-width:800px){
+	.btn{
+		margin-top: 300px;
+		margin-left: 180px;
+		font-size: 17px;
+	}
+	.size{
+		width: 400px;
+		height: 300px;
+	}
+    .styling{
+        padding: 0px 45px 0px 50px;
+        font-family: cursive;
+    }
+    .contact-info{
+		flex-direction:column;
+	}
+	.card{
+		width:100%;
+		margin-bottom: 30px;
+	}
+	nav{
+	height: 120px;
+	}
+	nav ul{
+	margin-right:30px;  
+	}
+	nav ul li{
+	line-height:40px;
+	}
+}

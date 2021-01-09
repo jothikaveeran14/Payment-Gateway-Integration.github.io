@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+  		<title>Donation</title>
+  		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+  		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<style>
+			body{
+				background-image: url('images/raise hands.jpg');
+				background-size: 100%;
+				background-repeat:no-repeat;
+				background-attachment:fixed;
+				font-family:montserrat;
+				background-position: center;
+			}
+			.container{
+				width:450px;
+				box-shadow: 0 0 3px rgba(255, 0, 0, 0.8);
+				background:#fff;
+				padding:20px;
+				margin: 5% auto;
+				border-radius: 35px;
+				text-align:center; 
+				opacity:0.8;
+			}
+			@media screen and (max-width:800px){
+				.container{
+					width: 350px;
+					margin: 8% auto;
+				}
+				.container h1{
+					font-size: 20px;
+					font-family: cursive;
+				}
+				.container img{
+					width: 120px;
+					height: 170px;
+				}
+			}
+		</style>
+		<nav>
+			<label class="left">Feed The Needy</label>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="contact.html">Contact us</a></li>
+				<li><a href="about.html">About</a></li>
+			</ul>
+		</nav>
+		<div class="container">
+			<img src="images/donation.png" width="200" height="250"><br>
+	    	<h1 style="color: #404040">"Remember that the happiest people are not those getting more, but those giving more"</h1><br>
+	    <form><script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_GMOEr5cWRJZV8i"> </script> </form>
+		</div>
+	</body>
+</html>
